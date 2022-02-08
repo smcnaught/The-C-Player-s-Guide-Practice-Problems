@@ -1,0 +1,15 @@
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\bin\Debug\net6.0\Level4-Comments.exe
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\bin\Debug\net6.0\Level4-Comments.deps.json
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\bin\Debug\net6.0\Level4-Comments.runtimeconfig.json
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\bin\Debug\net6.0\Level4-Comments.dll
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\bin\Debug\net6.0\ref\Level4-Comments.dll
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\bin\Debug\net6.0\Level4-Comments.pdb
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\obj\Debug\net6.0\Level4-Comments.csproj.AssemblyReference.cache
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\obj\Debug\net6.0\Level4-Comments.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\obj\Debug\net6.0\Level4-Comments.AssemblyInfoInputs.cache
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\obj\Debug\net6.0\Level4-Comments.AssemblyInfo.cs
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\obj\Debug\net6.0\Level4-Comments.csproj.CoreCompileInputs.cache
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\obj\Debug\net6.0\Level4-Comments.dll
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\obj\Debug\net6.0\ref\Level4-Comments.dll
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\obj\Debug\net6.0\Level4-Comments.pdb
+C:\Projects\The C# Players Guide - Book Practice Problems\Level4-Comments\obj\Debug\net6.0\Level4-Comments.genruntimeconfig.cache
