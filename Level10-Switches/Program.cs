@@ -1,5 +1,4 @@
-﻿Console.Write(@"Buying Inventory
-The following items are available:
+﻿Console.Write(@"The following items are available:
 1 - Rope
 2 - Torches
 3 - Climbing Equipment
@@ -9,6 +8,7 @@ The following items are available:
 7 - Food Supplies
 What Number do you want to see the price of ? ");
 string? choice = Console.ReadLine() ?? null;
+
 Console.Write("What's you name? ");
 string? buyerName = Console.ReadLine() ?? null;
 bool discount = buyerName == "Totoro";
