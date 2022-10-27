@@ -1,6 +1,6 @@
 public static class RandomExtensions {
   public static double NextDouble(this Random random, double max) {
-    return randon.NextDouble() * max;
+    return random.NextDouble() * max;
   }
 
   public static string NextString(this Random random, params string[] values) {
