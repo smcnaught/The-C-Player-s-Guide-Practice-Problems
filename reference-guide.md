@@ -21,13 +21,13 @@ What can you use .NET core to create?
 `You can use it to create all kinds of apps; such as: mobile, desktop, online, cloud, IoT, machine learning, games, microservices, etc.`
 
 What is the difference between .NET core and .NET framework?
-`.NET core is open source where .NET framework only has some open source components`
-`.NET core is cross platform (Windows, Linux, MacOS) where .NET framework is only compatible with Windows`
-`.NET core supports microservices where .NET framework doesn't allow you to create microservices`
-`.NET core is more performant and scalable than .NET framework`
-`.NET core supports mobile app development where .NET framework is not`
-`.NET core has the CLI and you can switch to IDE if you want. .NET framework only has IDE (integrated development environment)`
-`.NET core is a collection of NuGet packages where .NET framework libraries are all shipped as a whole`
+- `.NET core is open source where .NET framework only has some open source components`
+- `.NET core is cross platform (Windows, Linux, MacOS) where .NET framework is only compatible with Windows`
+- `.NET core supports microservices where .NET framework doesn't allow you to create microservices`
+- `.NET core is more performant and scalable than .NET framework`
+- `.NET core supports mobile app development where .NET framework is not`
+- `.NET core has the CLI and you can switch to IDE if you want. .NET framework only has IDE (integrated development environment)`
+- `.NET core is a collection of NuGet packages where .NET framework libraries are all shipped as a whole`
 
 What is the latest version of .NET Core?
 `3.0.3 - released February 2020`
@@ -67,7 +67,7 @@ What is a variable?
 What characters are valid in C# variable names?
 `Variables must start with a letter or the _ character. After the first character you can use numbers`
 
-Name the eight integer types?
+Name the eight numeric types?
 `int, short, long, byte, sbyte, uint, ushort, ulong`
 
 Name the three types for storing real numbers (the floating-point data types)?
@@ -77,16 +77,16 @@ How many total numeric types are there?
 `11`
 
 What is the difference between float, double and decimal?
-`float uses 4 bytes, double uses 8 bytes, decimal uses 16 bytes`
-`float and double are faster`
-`decimal is more precise`
-`float uses the fewest bytes and it's precision level is good enough most the time`
-`append 'f' to make float, 'm' to make decimal`
+- `float uses 4 bytes, double uses 8 bytes, decimal uses 16 bytes`
+- `float and double are faster`
+- `decimal is more precise`
+- `float uses the fewest bytes and it's precision level is good enough most the time`
+- `append 'f' to make float, 'm' to make decimal`
 
 If you are doing something that requires mathematical precision which type is the best?
 `decimal`
 
-What is the difference between signed and unsigned types?
+What is the difference between signed and unsigned numeric types?
 `**Signed** types store positive and negative numbers. **Unsigned** types store only positive numbers, but store twice as many`
 `Examples of signed types: short, int, and long, sbyte`
 `Examples of unsigned types: ushort, uint, and ulong, byte`
@@ -108,7 +108,7 @@ How do you convert between number types?
 `Convert.ToDouble(toConvert)  - converts to double`
 `Convert.ToBoolean(toConvert) - converts to bool`
 
-What are some risks with conversions?
+What are some risks with numeric conversions?
 `Converting from long to byte could lose data since long could be bigger than what byte can represent`
 
 What is the difference between explicit or implicit conversions?
@@ -183,7 +183,7 @@ What is the NOT operator?
 `!`
 
 Name the types of loops?
-`while, do while, for, and foreach(for lists & arrays)`
+`while, do while, for, and foreach(for lists & arrays - anything that extends IEnumerable)`
   `while (condition) {}`
   `do {} while (condition)`
   `for (int i = 0; i < 5; i++) {}`
@@ -196,7 +196,7 @@ What is an array?
 `Used to hold multiple values of the same type. Has a fixed size (can't add or remove elements)`
 
 How do you create an array?
-`new int[3] *OR* new int[] {1, 2, 3} *OR* new [] {1, 2, 3}`
+`int[] myArr = new int[3] *OR* int[] myArr = new int[] {1, 2, 3} *OR* int[] myArr = new [] {1, 2, 3}`
 `Example: string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};`
 
 How do you check the number of items in an array?
@@ -253,7 +253,7 @@ What is recursion?
 `When a method calls itself`
 
 What are access modifiers? (accessability modifiers)
-`Public (usable anywhere)
+`Public (usable anywhere)`
 `Private            (only used within the class)`
 `Internal           (only used inside the project - same assembly)`
 `Protected          (only used within class or in a class derived from that class)`
@@ -285,7 +285,7 @@ What is a garbage collector?
 
 What is a value type?
 `Value types directly contain their data. They have a known, fixed size.`
-`The values types are: All numeric types (int, double, long, etc.), bool, struct, and char`
+`The values types are: All numeric types (int, double, long, etc.), bool, struct, char`
 
 What is a reference type? 
 `A reference type variable stores a reference to where it's data is stored in memory(on the heap)`
@@ -332,15 +332,14 @@ What is the difference between a field and a property?
 `Fields should be kept private. Properties have getters and setters and allow access to fields.`
 
 How do you extend a class?
-`Use a colon.                                                Example: public class Dog : Animal {}`
-`The class constructor extends the base constructor as well. Example: public Dog(DogBreed breed): base(string animalType) {}`
+`Use a colon.                                                        Example: public class Dog : Animal {}`
+`The derived class constructor extends the base constructor as well. Example: public Dog(DogBreed breed): base(string animalType) {}`
 
 What does the abstract keyword mean?
 `When used you have to override the method or class that it's used on.`
 `Used in interfaces`
 `Abstract members must have abstract classes`
 `Abstract class can contain any members it wants though - not everything has to be abstract`
-
 
 What is an interface?
 `Defines the methods, properties, etc. that need to exist on any class that implements it.`
@@ -366,7 +365,7 @@ What are generics?
 
 What does the static keyword mean?
 `Means the item is owned by the type itself rather than the instance. It's shared across all instances.`
-`Classes, fields, methods, and constructors can be static. If class is static, all members must be static`
+`Classes, fields, methods, and constructors can be static. If a class is static, all members must be static`
 
 What is a dictionary?
 `data structure that allows you to store key-value pairs`
@@ -381,7 +380,7 @@ How to check for null?
 `Allow null values to fall back to a default. Example: x ?? "empty"`
 
 How do you check types?
-`using 'GetType()' and 'typeof'. Example: if (obj1.GetType() == typeof(obj2))`
+`using 'GetType()' and 'typeof'. Example: if (obj1.GetType() == typeof(MyType))`
 `using 'is' keyword.             Example: if (obj1 is Animal)`
 
 What is boxing and unboxing?
@@ -469,20 +468,21 @@ What is a deadlock? concurrency related issue
 
 What is asynchronous programming?
 `lets task run in the background. scheduling tasks to continue or callbacks to happen when the async task completes.`
-`Task and Task<Results> classes can be used to schedule tasks to run async.`
+`Task (no return value) and Task<T>(has return value) classes can be used to schedule tasks to run async.`
 `You can 'await' an async task if your method has the 'async' keyword`
 
 What is 'unsafe' code?
 `Determined by explicitly using the 'unsafe' keyword.`
-`Allows you to refernce and manipulate memory locations directly`
+`Allows you to reference and manipulate memory locations directly`
 
 What is IDisposable?
 `It is used to release managed and unmanaged resources`
 `Lets you run your own logic on an object before it's garbage collected.`
-`Call Dispose() to clean up`
+`Call Dispose() to clean up - can lead to memory leaks if you don't`
 
 What is the difference between managed and unmanaged resources?
 `Unmanaged resources are not directly under the control of the garbage collector`
+`Unmanaged code is sometimes called "native code"`
 
 What is a partial class?
 `Allows slices of the class to be defined in separate files.`
@@ -508,3 +508,33 @@ What is a bit?
 
 What is a byte?
 `8 bits`
+
+What is a dynamic object?
+`An object that can be defined at creation time and allows methods and properties to be added/removed as the program runs.`
+`Built using the 'IDynamicMetaObjectProvider' interface, deriving from the 'DynamicObject' class, or using the 'ExpandoObject' class (ExpandoObject is the simplest).`
+`Should stick to statically typed objects unless you have a good reason not to.`
+`Can emulate dynamic objects with dictionaries instead.`
+
+What is dynamic type checking?
+`A variable is dynamically typed if it uses the 'dynamic' keyword. Example: dynamic text = "Hello World";`
+`Variables including parameters and return types have no fixed type.`
+`The compiler can't check if a given method call will work.`
+`Should stick to statically typing your variables unless you have a good reason not to.`
+
+What is a Pointer?
+`Allows you to reference a specific memory address`
+`Typically used in unsafe code`
+`Declared by using a "*". Example: int* p; // A pointer to an integer`
+
+What does a "Fixed" statement do?
+`Lets you "pin" managed references in place so a Pointer can reference them`
+`A "fixed-size array" or "fixed-size buffer" stores its data within a struct instead of on the heap (size of array remains same).`
+
+What is a stack allocation?
+`Placing an array's memory on the stack instead of the heap.`
+`Done by using "stackalloc" keyword. Example: int* numbers = stackalloc int[10];`
+`Only allowed in unsafe context, for local variables and only for unmanaged types`
+
+What is "PIS" (also known as "P/Invoke")?
+`Platform Invocation Services`
+`Allows managed C# code to call native, unmanaged, non .NET code directly (including C & C++ libraries and OS calls).`
